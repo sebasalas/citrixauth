@@ -32,8 +32,8 @@ For more information about stoken and its functionality, visit the [stoken GitHu
 
 1. Clone the repository:
 ```bash
-git  clone  https://github.com/sebasalas/citrixauth.git
-cd  citrixauth
+git clone https://github.com/sebasalas/citrixauth.git
+cd citrixauth
 ```
 
 2. Create and edit the `utils/config.sh` file to include your credentials:
@@ -52,17 +52,17 @@ Ensure the `CITRIX_SCRIPT_DIR` path matches the location of your project on your
 
 3. Make the script executable:
 ```bash
-chmod  +x  utils/get_token.sh
+chmod +x utils/get_token.sh
 ```
 
 ## Usage
 1. Source the configuration file to load credentials:
 ```bash
-source  utils/config.sh
+source utils/config.sh
 ```
 2. Run the AppleScript:
 ```bash
-osascript  citrixauth.scpt
+osascript citrixauth.scpt
 ```
 3. The script will:
 - Open Citrix Secure Access.
