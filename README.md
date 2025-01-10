@@ -66,6 +66,23 @@ osascript citrixauth.scpt
 - Wait for UI elements dynamically.
 - Automate the login process.
 
+## Troubleshooting
+
+### Error: "execution error: System Events got an error: osascript is not allowed assistive access."
+
+If you encounter this error, it means your terminal application (e.g., Terminal, iTerm2) does not have the necessary permissions to use assistive access.
+To resolve this:
+
+1. Open **System Settings** on your Mac.
+2. Go to **Privacy & Security** > **Accessibility**.
+3. Locate your terminal application (e.g., Terminal, iTerm2) in the list.
+- If it’s not listed, click the `+` button, and manually add it from the `/Applications` folder.
+4. Enable the checkbox next to your terminal application to grant it permission.
+5. Re-run the command:
+```bash
+osascript citrixauth.scpt
+```
+
 ## File Structure
 ```bash
 citrixauth/
