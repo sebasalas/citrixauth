@@ -23,6 +23,14 @@ The scripts are designed to securely externalize sensitive information and make 
 
 1. **macOS** with support for AppleScript and `expect`.
 
+    - AppleScript can be executed via the `osascript` command, which should be available by default.
+    - Make sure both `osascript` and `expect` are available in your terminal by running:
+
+     ```bash
+     which osascript
+     which expect
+     ```
+
 2. **Install and configure `stoken` for OTP generation:**
 
    `stoken` is used to generate the temporary one-time password (OTP) for authentication. Follow these steps:
@@ -54,13 +62,6 @@ The scripts are designed to securely externalize sensitive information and make 
    For more information, visit the [stoken GitHub page](https://github.com/stoken-dev/stoken).
 
 3. A working Citrix Secure Access installation. You can download it from your organization's internal software portal or the official Citrix site, depending on your enterprise setup.
-
-4. Make sure `osascript` and `expect` are available in your terminal. You can verify this by running:
-
-   ```bash
-   which osascript
-   which expect
-   ```
 
 ## Installation
 
